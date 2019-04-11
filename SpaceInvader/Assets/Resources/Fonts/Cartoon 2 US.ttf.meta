@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 7b4c1ecf31d1c554cbc3cdd633abad44
+timeCreated: 1553620372
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cartoon 2 US
+  fontNames:
+  - Cartoon 2 US
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
