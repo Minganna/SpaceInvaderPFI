@@ -7,13 +7,20 @@ public class KeepTrackofTime : MonoBehaviour {
 
     public Text timepassed;
     public GameObject Menu;
-    public PlayerLife PL;
+    PlayerLife PL = null;
     public LoadResults achievements;
     public int count=0;
+    public bool canstart=false;
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)&&!Menu.activeSelf)
+        if(canstart==true)
+        {
+         PL = GameObject.FindGameObjectWithTag("PL").GetComponent<PlayerLife>();
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Escape)&&!Menu.activeSelf)
         {
             Menu.SetActive(true);
             return;
@@ -45,10 +52,17 @@ public class KeepTrackofTime : MonoBehaviour {
             achievements.changeAmmo = false;
         }
 
-        if(PL.HealthBar.value<200)
+        if(canstart==true)
         {
-            achievements.changehealth = false;
+            if (PL.HealthBar.value < 200)
+            {
+
+                achievements.changehealth = false;
+            }
         }
+       
     }
+
+
 
 }

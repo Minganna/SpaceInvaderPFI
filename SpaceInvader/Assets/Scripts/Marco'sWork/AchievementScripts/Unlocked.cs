@@ -45,6 +45,11 @@ public class Unlocked : MonoBehaviour {
             timetowait = 5f;
             StartCoroutine(GetGold());
         }
+
+        if (!achievementstatus.changehealth || !achievementstatus.changeTime || !achievementstatus.changeAmmo)
+        {
+            achievementstatus.changegold = false;
+        }
     }
 
 

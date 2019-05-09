@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 285874807}
   - component: {fileID: 285874806}
-  - component: {fileID: 285874805}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -130,13 +129,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!124 &285874805
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 285874803}
-  m_Enabled: 1
 --- !u!20 &285874806
 Camera:
   m_ObjectHideFlags: 0
@@ -353,6 +345,7 @@ MonoBehaviour:
   LevelToLoad: 0
   level: {fileID: 1544720460}
   DummyCamera: {fileID: 285874806}
+  StartCheckLife: {fileID: 1544720458}
 --- !u!114 &1544720458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,9 +359,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timepassed: {fileID: 1841628235}
   Menu: {fileID: 2029950695}
-  PL: {fileID: 0}
   achievements: {fileID: 1544720461}
   count: 0
+  canstart: 0
 --- !u!4 &1544720459
 Transform:
   m_ObjectHideFlags: 0

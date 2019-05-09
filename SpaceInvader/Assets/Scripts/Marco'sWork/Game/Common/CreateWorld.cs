@@ -8,6 +8,7 @@ public class CreateWorld : MonoBehaviour {
     public int LevelToLoad;
     public ChangeLife level;
     public Camera DummyCamera;
+    public KeepTrackofTime StartCheckLife;
 
 
 	// Use this for initialization
@@ -19,9 +20,12 @@ public class CreateWorld : MonoBehaviour {
     IEnumerator waittoload()
     {
         yield return new WaitForSeconds(1f);
-        Destroy(DummyCamera);
         LevelToLoad = level.NewLevel;
         Instantiate(DesiredLevel[LevelToLoad], this.gameObject.transform.position, Quaternion.identity);
+        StartCheckLife.canstart = true;
+        yield return new WaitForSeconds(1f);
+        Destroy(DummyCamera);
+
     }
 	
 

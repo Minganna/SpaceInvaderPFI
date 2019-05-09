@@ -10,6 +10,12 @@ public class KeepTrackofLevel : MonoBehaviour {
     public bool changeLevel2 = false;
     static bool Level3 = false;
     public bool changeLevel3 = false;
+    static bool Level1Gold = false;
+    public bool changeLevel1Gold;
+    static bool Level2Gold = false;
+    public bool changeLevel2Gold = false;
+    static bool Level3Gold = false;
+    public bool changeLevel3Gold = false;
 
 
 
@@ -21,6 +27,9 @@ public class KeepTrackofLevel : MonoBehaviour {
         changeLevel1= Level1;
         changeLevel2 = Level2;
         changeLevel3 = Level3;
+        changeLevel1Gold = Level1Gold;
+        changeLevel2Gold = Level2Gold;
+        changeLevel3Gold = Level3Gold;
     }
 
     // Update is called once per frame
@@ -29,5 +38,8 @@ public class KeepTrackofLevel : MonoBehaviour {
         Level1 = changeLevel1;
         Level2 = changeLevel2;
         Level3 = changeLevel3;
+        Level1Gold = changeLevel1Gold;
+        Level2Gold = changeLevel2Gold;
+        Level3Gold = changeLevel3Gold;
     }
 }

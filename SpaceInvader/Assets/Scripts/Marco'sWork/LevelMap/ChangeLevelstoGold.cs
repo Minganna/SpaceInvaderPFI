@@ -12,18 +12,64 @@ public class ChangeLevelstoGold : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(Level.changeLevel1==true&&GetStatus.changegold)
+        if(levelsrend[0]!=null&& levelsrend[1] != null&& levelsrend[2] != null)
         {
-            levelsrend[0].material.color = Color.yellow;
+
+            if (Level.changeLevel1 == true && GetStatus.changegold)
+            {
+                Level.changeLevel1Gold = true;
+            }
+            if (Level.changeLevel2 == true && GetStatus.changegold)
+            {
+                Level.changeLevel2Gold = true;
+            }
+            if (Level.changeLevel3 == true && GetStatus.changegold)
+            {
+                Level.changeLevel3Gold = true;
+            }
+            if (Level.changeLevel1 == true && !GetStatus.changegold)
+            {
+                Level.changeLevel1Gold = false;
+            }
+            if (Level.changeLevel2 == true && !GetStatus.changegold)
+            {
+                Level.changeLevel2Gold = false;
+            }
+            if (Level.changeLevel3 == true && !GetStatus.changegold)
+            {
+                Level.changeLevel3Gold = false;
+            }
+
+            if (Level.changeLevel1Gold == true)
+            {
+                levelsrend[0].material.color = Color.yellow;
+                Level.changeLevel1 = false;
+            }
+            if (Level.changeLevel2Gold == true)
+            {
+                levelsrend[1].material.color = Color.yellow;
+                Level.changeLevel2 = false;
+            }
+            if (Level.changeLevel3Gold == true)
+            {
+                levelsrend[2].material.color = Color.yellow;
+                Level.changeLevel3 = false;
+            }
+            if (Level.changeLevel1Gold == false)
+            {
+                levelsrend[0].material.color = Color.white;
+            }
+            if (Level.changeLevel2Gold == false)
+            {
+                levelsrend[1].material.color = Color.white;
+            }
+            if (Level.changeLevel3Gold == false)
+            {
+                levelsrend[2].material.color = Color.white;
+            }
         }
-        if (Level.changeLevel2 == true && GetStatus.changegold)
-        {
-            levelsrend[1].material.color = Color.yellow;
-        }
-        if (Level.changeLevel3 == true && GetStatus.changegold)
-        {
-            levelsrend[2].material.color = Color.yellow;
-        }
+
+
 
     }
 }
