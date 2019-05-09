@@ -5,6 +5,7 @@ using UnityEngine;
 public class MouseMovements : MonoBehaviour {
 
     Vector3 MouseLocation;
+    public bool canMove=true;
   
 
 	// Use this for initialization
@@ -14,10 +15,14 @@ public class MouseMovements : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(canMove==true)
+        {
 
-        MouseLocation = Input.mousePosition;
-        MouseLocation.z = 27.39f;
-        MouseLocation.y = 50f;
-        transform.position = Camera.main.ScreenToWorldPoint(MouseLocation);
+            MouseLocation = Input.mousePosition;
+            MouseLocation.z = 27.39f;
+            MouseLocation.y = 50f;
+            transform.position = Camera.main.ScreenToWorldPoint(MouseLocation);
+        }
+
 	}
 }

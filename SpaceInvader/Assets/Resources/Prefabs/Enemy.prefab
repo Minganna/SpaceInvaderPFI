@@ -25,6 +25,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_health: 10
+  IsBoss: 0
 --- !u!1 &8256825371898731569
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +44,7 @@ GameObject:
   - component: {fileID: 611817777061192101}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_minRandomVelocity: 1
-  m_maxRandomVelocity: 20
+  m_maxRandomVelocity: 5
   m_minRandomTorque: -100
   m_maxRandomTorque: 100
 --- !u!33 &8256825371898731572

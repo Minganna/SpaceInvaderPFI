@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     float m_currentAxisValue = 0;
 
+    public bool canMove = true;
+
     Rigidbody m_rigidbody;
 
     private void Awake()
@@ -17,14 +19,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // We get the movement value based on Unity's input system, which turns our A + D and Left + Right keys into a float value.
-        // Using AxisRaw will return -1, 0 or 1, while Axis will return a smoothly changing value between -1 and 1
-        m_currentAxisValue = -Input.GetAxisRaw("Horizontal");
-        if (m_currentAxisValue != 0)
+        if(canMove==true)
         {
-            // If you remove Time.deltaTime it will be tied to your frame rate = VERY BAD
-            // Try removing it and then compare setting your quality settings Vsync to Half and off, you'll see a big difference
-            m_rigidbody.AddForce(new Vector3(0, 0, (m_currentAxisValue * m_movementRate) * Time.deltaTime));
-        }        
+            // We get the movement value based on Unity's input system, which turns our A + D and Left + Right keys into a float value.
+            // Using AxisRaw will return -1, 0 or 1, while Axis will return a smoothly changing value between -1 and 1
+            m_currentAxisValue = -Input.GetAxisRaw("Horizontal");
+            if (m_currentAxisValue != 0)
+            {
+                // If you remove Time.deltaTime it will be tied to your frame rate = VERY BAD
+                // Try removing it and then compare setting your quality settings Vsync to Half and off, you'll see a big difference
+                m_rigidbody.AddForce(new Vector3(0, 0, (m_currentAxisValue * m_movementRate) * Time.deltaTime));
+            }
+        }
+      
     }
 }

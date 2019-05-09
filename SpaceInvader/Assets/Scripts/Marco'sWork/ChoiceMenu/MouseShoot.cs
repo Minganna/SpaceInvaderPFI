@@ -18,6 +18,8 @@ public class MouseShoot : MonoBehaviour {
     float m_fireRate = 0.25f;
     float m_currentFireTimer = 0f;
 
+    public bool canMove = true;
+
     void Update()
     {
         if (m_currentFireTimer > 0)
@@ -37,7 +39,11 @@ public class MouseShoot : MonoBehaviour {
 
     void SpawnBullet()
     {
-        GameObject go = Instantiate(m_bulletPrefab);
-        go.transform.position = m_spawnPosition.position;
+        if(canMove==true)
+        {
+            GameObject go = Instantiate(m_bulletPrefab);
+            go.transform.position = m_spawnPosition.position;
+        }
+
     }
 }

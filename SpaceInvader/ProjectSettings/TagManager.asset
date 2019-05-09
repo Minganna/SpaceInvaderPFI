@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Boom
+  - Enemy
+  - LoadGame
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,11 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField]
     GameObject m_enemyPrefab = null;
+    [SerializeField]
+    GameObject m_punchPrefab = null;
+
+
+    GameObject go;
 
     [SerializeField]
     float m_minSpawnTime = 0.2f, m_maxSpawnTime = 1.5f;
@@ -16,6 +21,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     float m_minMaxSpawnWidth = 9.5f;
     float m_minSpawnWidth = 0f;
+
+    public bool IsJoJo = false;
 
     private void Start()
     {
@@ -36,7 +43,15 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnPrefab()
     {
-        GameObject go = Instantiate(m_enemyPrefab);
+        if(IsJoJo==false)
+        {
+          go= Instantiate(m_enemyPrefab);
+        }
+        if (IsJoJo == true)
+        {
+            go = Instantiate(m_punchPrefab);
+        }
+
         go.transform.SetParent(transform);
         go.transform.localPosition = new Vector3(0, 0, Random.Range(m_minSpawnWidth, m_minMaxSpawnWidth));
     }

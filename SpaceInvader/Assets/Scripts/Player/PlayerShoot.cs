@@ -6,6 +6,8 @@ public class PlayerShoot : MonoBehaviour
 
     [SerializeField]
     GameObject m_bulletPrefab = null;
+    [SerializeField]
+    GameObject m_punchPrefab = null;
 
     [SerializeField]
     Transform m_spawnPosition = null;
@@ -13,9 +15,14 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     KeyCode m_fireKey = KeyCode.Space;
 
+
+   public bool isJojo = false;
+    public bool CanMove = true;
+
     [SerializeField]
     float m_fireRate = 0.25f;
     float m_currentFireTimer = 0f;
+    GameObject go;
 
     void Update()
     {
@@ -36,8 +43,20 @@ public class PlayerShoot : MonoBehaviour
 
     void SpawnBullet()
     {
-        GameObject go = Instantiate(m_bulletPrefab);
-        go.transform.position = m_spawnPosition.position;
+        if(CanMove==true)
+        {
+
+            if (isJojo == false)
+            {
+                go = Instantiate(m_bulletPrefab);
+            }
+            if (isJojo == true)
+            {
+                go = Instantiate(m_punchPrefab);
+            }
+            go.transform.position = m_spawnPosition.position;
+        }
+
     }
    
 }
