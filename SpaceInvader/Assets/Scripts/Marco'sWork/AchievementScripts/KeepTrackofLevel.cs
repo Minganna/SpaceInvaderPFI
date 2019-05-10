@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class KeepTrackofLevel : MonoBehaviour {
 
+	public int CardGot;
+	static int Cards;
+
+
+
     static bool Level1 = false;
     public bool changeLevel1;
     static bool Level2 = false;
@@ -21,6 +26,7 @@ public class KeepTrackofLevel : MonoBehaviour {
 
 
 
+
     // Use this for initialization
     void Start()
     {
@@ -30,6 +36,15 @@ public class KeepTrackofLevel : MonoBehaviour {
         changeLevel1Gold = Level1Gold;
         changeLevel2Gold = Level2Gold;
         changeLevel3Gold = Level3Gold;
+
+
+
+
+
+
+
+		CardGot = Cards;
+
     }
 
     // Update is called once per frame
@@ -41,5 +56,12 @@ public class KeepTrackofLevel : MonoBehaviour {
         Level1Gold = changeLevel1Gold;
         Level2Gold = changeLevel2Gold;
         Level3Gold = changeLevel3Gold;
+
+
+
+
+
+
+		Cards = CardGot;
     }
 }

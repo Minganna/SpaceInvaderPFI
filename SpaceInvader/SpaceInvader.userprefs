@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Marco'sWork\AchievementScripts\World2.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Marco'sWork\Game\NormalLevels\RotateUfo.cs" Line="19" Column="115" />
+      <File FileName="Assets\Scripts\Marco'sWork\LevelMap\LevelManager.cs" Line="56" Column="24" />
+      <File FileName="Assets\Scripts\Marco'sWork\AchievementScripts\KeepTrackofLevel.cs" Line="65" Column="3" />
+      <File FileName="Assets\Scripts\Marco'sWork\AchievementScripts\World2.cs" Line="33" Column="20" />
+      <File FileName="Assets\Scripts\Marco'sWork\LevelMap\Levels.cs" Line="11" Column="22" />
+      <File FileName="Assets\Scripts\Marco'sWork\AchievementScripts\GetTheCard.cs" Line="30" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

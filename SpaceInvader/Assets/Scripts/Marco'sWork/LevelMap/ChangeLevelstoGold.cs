@@ -39,22 +39,7 @@ public class ChangeLevelstoGold : MonoBehaviour {
             {
                 Level.changeLevel3Gold = false;
             }
-
-            if (Level.changeLevel1Gold == true)
-            {
-                levelsrend[0].material.color = Color.yellow;
-                Level.changeLevel1 = false;
-            }
-            if (Level.changeLevel2Gold == true)
-            {
-                levelsrend[1].material.color = Color.yellow;
-                Level.changeLevel2 = false;
-            }
-            if (Level.changeLevel3Gold == true)
-            {
-                levelsrend[2].material.color = Color.yellow;
-                Level.changeLevel3 = false;
-            }
+				
             if (Level.changeLevel1Gold == false)
             {
                 levelsrend[0].material.color = Color.white;
@@ -67,6 +52,27 @@ public class ChangeLevelstoGold : MonoBehaviour {
             {
                 levelsrend[2].material.color = Color.white;
             }
+			if (Level.changeLevel1Gold == true)
+			{
+				levelsrend[0].material.color = Color.yellow;
+				if (Level.CardGot == 0) {
+					Level.changeLevel1 = false;
+				}
+			}
+			if (Level.changeLevel2Gold == true)
+			{
+				levelsrend[1].material.color = Color.yellow;
+				if (Level.CardGot == 0) {
+					Level.changeLevel2 = false;
+				}
+			}
+			if (Level.changeLevel3Gold == true)
+			{
+				levelsrend[2].material.color = Color.yellow;
+				if (Level.CardGot == 0) {
+					Level.changeLevel3 = false;
+				}
+			}
         }
 
 

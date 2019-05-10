@@ -74,10 +74,10 @@
      <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPPropagationMaterialEditor.cs" />
      <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPReflectionCustomGUI.cs" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceInvader/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceGit/SpaceInvader/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceInvader/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceGit/SpaceInvader/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -171,6 +171,12 @@
  </Reference>
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-Editor">
+ <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceGit/SpaceInvader/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-Runtime">
+ <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceGit/SpaceInvader/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/s4929892/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

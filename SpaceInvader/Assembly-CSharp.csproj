@@ -339,6 +339,11 @@
      <Compile Include="Assets\Scripts\Enemy\EnemyScaleSpawn.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyVelocity.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\AchievementScripts\ComeBackToMenu.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\AchievementScripts\GetTheCard.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\AchievementScripts\KeepTrackofLevel.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\AchievementScripts\Unlocked.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\AchievementScripts\World2.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\ChoiceMenu\ChooseGame.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\ChoiceMenu\InputFieldAuto.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\ChoiceMenu\InputText.cs" />
@@ -347,6 +352,19 @@
      <Compile Include="Assets\Scripts\Marco&apos;sWork\ChoiceMenu\OpenKeyboard.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\ChoiceMenu\SaveName.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\ChoiceMenu\TouchKeyboard.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\BossFight\Boss.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\BossFight\StopTime.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\Common\CreateWorld.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\Common\KeepTrackofTime.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\Common\PlayerLife.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\Cutscenes\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\Cutscenes\ChangeCamera.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\LoadResults.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\NormalLevels\ChangeLife.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\NormalLevels\MiniBoss.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\Game\NormalLevels\RotateUfo.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\LevelMap\ChangeLevelstoGold.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\LevelMap\Level3Model.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\LevelMap\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\LevelMap\Levels.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\LevelMap\Score.cs" />
@@ -355,6 +373,7 @@
      <Compile Include="Assets\Scripts\Marco&apos;sWork\MainMenu\ChangeText.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\MainMenu\InvadersFadeOut.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\MainMenu\InvadersFalling.cs" />
+     <Compile Include="Assets\Scripts\Marco&apos;sWork\MainMenu\MouseKeyboard.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\MainMenu\NotSupported.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\MainMenu\RotatingBall.cs" />
      <Compile Include="Assets\Scripts\Marco&apos;sWork\MainMenu\SpaceBar.cs" />
@@ -365,31 +384,85 @@
      <Compile Include="Assets\Scripts\Player\BulletVelocity.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerShoot.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <None Include="Assets\Resources\Shaders\Ghost.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
      <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\Resources\Shaders\Toon.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Resources\Multiview Stereo.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\Resources\Shaders\Geometry.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
      <None Include="Assets\Resources\Shaders\PixelArt.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_Transparent.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Resources\Shaders\Burning.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_Loader.shader" />
      <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarSurfaceShader.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_02.shader" />
      <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald Bold - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBS.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Oculus\Avatar\Samples\SocialStarter\README.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\NotoSans - License.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\Oculus\SampleFramework\license.txt" />
      <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarSurfaceShaderPBSV2.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_CombinedMesh.shader" />
      <None Include="Assets\Resources\Shaders\Dissolve.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\Resources\Shaders\Sketch.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
      <None Include="Assets\Resources\Shaders\Fur.shader" />
@@ -402,7 +475,7 @@
      <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceInvader/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceGit/SpaceInvader/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -433,6 +506,12 @@
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-Editor">
+ <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceGit/SpaceInvader/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-Runtime">
+ <HintPath>W:/University/SecondYear/ProgramforInteraction/PFI/SpaceGit/SpaceInvader/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/s4929892/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
